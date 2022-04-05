@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <title>
+    <%- title %>
+  </title>
+  <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Meri">
+  <meta name="keywords" content="六角學院, 前端線上課程, Hex School, HTML, CSS, JavaScript">
+  <meta property="og:title" content="Hex School">
+  <meta property="og:description" content=" 打破影音課程售後不理，我們在線上等著你。">
+  <meta property="og:site_name" content="六角學院">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="./assets/image/HexSchool-logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/style/swiper.css">
+  <link rel="stylesheet" href="./assets/style/lightbox.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <!-- AOS.js -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 700,
+    });
+  </script>
+
+  <div class="wrap">
+    <ul class="top-bar">
+      <li>
+        <a class="facebook" href="#">
+          <img src="./assets/images/facebook.png" alt="facebook">
+          粉絲團
+        </a>
+      </li>
+      <li class="line">∣</li>
+      <li>
+        <a class="twitter" href="#">
+          <img src="./assets/images/twitter.png" alt="twitter">
+          追隨我們
+        </a>
+      </li>
+    </ul>
+
+    <div class="header">
+      <h1 class="logo"><a href="#">Hex School</a></h1>
+      <ul class="menu">
+        <li class="menu-list">
+          <a href="#">首頁</a>
+        </li>
+
+        <li class="menu-list">
+          <a class="dropdown" href="#">產品介紹</a>
+          <ul class="dropdown-list">
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">RWD</a></li>
+            <li><a href="#">JQuery</a></li>
+          </ul>
+        </li>
+
+        <li class="menu-list">
+          <a class="dropdown" href="#">聯絡我們</a>
+          <ul class="dropdown-list">
+            <li><a href="#">Instargram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">接案服務</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper" data-aos="fade-lfet">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides banner -->
+        <div class="swiper-slide banner-list-1">
+          <h2 class="banner-text">
+            六角學院
+            <br>
+            讓您奠定良好的前端基礎
+          </h2>
+        </div>
+        <div class="swiper-slide banner-list-2"></div>
+        <div class="swiper-slide banner-list-3"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <%- contents %>
+
+      <div class="footer">
+        <a href="#"><img src="./assets/images/HexSchool-logo-gray.png" alt="logo-gray"></a>
+        <ul>
+          <li><a href="mailto:">聯絡我們： <span class="pink">hexschool@gmail.com</span></a></li>
+          <li><a href="tel:+">電話： <span class="pink">0999123456</span></a></li>
+        </ul>
+      </div>
+  </div>
+  <!-- scroll-top -->
+  <div class="scroll-top">
+    <a href="#">↑</a>
+  </div>
+
+  <!-- JS -->
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/lightbox.js"></script>
+  <script src="./assets/js/swiper.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
